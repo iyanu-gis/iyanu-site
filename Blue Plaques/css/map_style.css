@@ -1,0 +1,141 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html { 
+	height: 100%;
+	width: 100%;
+}
+
+body { 
+	height: 100%;
+	width: 100%;
+	background-color: white;
+    color: black;
+    font-size: 13px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#page-id{
+	padding: 10px 5px;
+	margin-bottom: 10px;
+	color: #e2ecf0;
+}
+
+#sidebar{
+	padding: 10px;
+}
+
+.sidebar {
+	height: 100%;
+	width: 20%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0, 140, 255); 
+	overflow-x: hidden;
+	padding-top: 16px;
+  }
+  
+.sidebar a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 13px;
+	color: white;
+	display: block;
+}
+
+.sidebar p {
+	padding: 6px 6px 6px 6px;
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+	display: block;
+}
+
+.sidebar h3{
+	color: white;
+	line-height: 1.6;
+}
+
+.sidebar a:hover {
+	color: #e2ecf0;
+}
+
+div.section{
+	position: relative;
+	height: 100%;
+	margin-left: 20%;
+	padding: 0 2%;
+}
+
+#selection{
+	width: 100%;
+}
+
+#select, #select option{
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	outline: none;
+}
+
+#page-id{
+	padding: 10px;
+}
+	
+.main {
+	margin-left: 160px; /* Same as the width of the sidenav */
+	padding: 0px ;
+}
+
+img{
+	mix-blend-mode: multiply;
+	width:100px ; 
+	height:100px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn {
+	background-color: rgb(0, 140, 255);
+	border: none;
+	color: white;
+	padding: 10px 10px;
+	font-size: 16px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+address{
+	display: block;
+}
+
+.infowindow{
+	display: block;
+	max-width: 350px;
+}
+
+.infowindow p{
+	padding-top: 5px;
+}
+
+.infowindow #image{
+	text-align: center;
+}
+
+.infowindow img{
+	width: 200px;
+	height: 200px;
+}
+
+.infowindow .title{
+	font-weight: bold;
+}
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+  }

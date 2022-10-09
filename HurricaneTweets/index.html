@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--for sidebar icons-->    
+        <link rel="stylesheet" href="./css/style.css"/>
+        <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha384-RFZC58YeKApoNsIbBxf4z6JJXmh+geBSgkCQXFyh+4tiFSJmJBt+2FbjxW7Ar16M" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/leaflet.markercluster@1.5.0/dist/leaflet.markercluster.js"  integrity="sha384-89yDmbSkL9reFc77m10ZbqLaUMf1sp7FAJs2oAD/rczNnY7I+17yN9KML6tpYpCk" crossorigin="anonymous"></script>
+        <script language="JavaScript" type="text/JavaScript" src="./js/script.js"></script>
+
+        <title >Hurricane Sandy Tweets</title>
+    </head>
+
+    <body onload= "initialize()">
+        <div class = "header">
+            <a class="list-group-item" href="./Index_page/index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+            <h1>Global map showing tweets from the 2012 Hurricane Sandy</h1>
+        </div>
+        <div  class="body-text">
+            <p style="text-align:left"> Hurricanes are unfortunate and destructive natural disasters that occur between the months of June and November affecting countries bordered by the Atlantic Ocean. On the 22nd October 2012, Hurricane Sandy, termed as the most destructive hurricane of the year started on the coasts of Jamaica. The Hurricane spanned through the Caribbean and Bermuda, United States, and Canada, destroying over $70.4 Billion and killing 147 people<sup>1</sup>. </p>
+            <p style="text-align:left"> Social media has always played an important role in information sharing, and its significance was highly felt during the period of the hurricane as information was obtained from tweets on Twitter including other social media platforms<sup>2</sup>.
+                The map below displays countries from which some of the tweets about the hurricane were posted.
+            </p>
+        </div>
+
+        <div id="map" style = "height: 500px; width: 70%;"></div>
+        <div class="button">
+            <button onclick = 'fetchData()'>Fetch Data</button>
+            <button onclick = 'clearData()'>Clear Data</button>
+        </div>
+        <div class="ref">
+            <p><b>References</p></b>
+            <p>1.) Pourebrahim, N., Sultana, S., Edwards, J., Gochanour, A. and Mohanty, S. 2019. Understanding communication dynamics on Twitter during natural disasters: A case study of Hurricane Sandy. International Journal of Disaster Risk Reduction. 37, p101176.</p>
+            <p>2.) Stewart, M.C. and Gail Wilson, B. 2016. The dynamic role of social media during Hurricane #Sandy: An introduction of the STREMII model to weather the storm of the crisis lifecycle. Computers in Human Behavior. 54, pp.639-646.</p>
+        </div>
+
+    </body>
+</html>

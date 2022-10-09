@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="./js/markerData.js"></script> <!--link to JS file containing marker information-->
+		<script type="text/javascript" src="./js/dynamicMarkers.js"></script> <!--link to JS file-->
+		<link rel="stylesheet" media="all" href="./css/map_style.css" type="text/css"> <!--link to CSS file-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- icon library -->
+
+		<title>Dynamic Markers</title>
+	</head>
+
+	<body onload="initialize()">
+		<div class="header">
+			<h1>Dynamic Markers around Leeds</h1> <!--header title-->
+			<a class="btn" href="./Index_page/index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+		</div>
+		<h2>The map displays five dynamic markers on Leeds, Kirklees, Calderdale, Bradford, and Wakefield. The markers display each city name with its population. </h2>
+		<div class="gmap" id="map_canvas" style="width:80%; height:80%"></div>
+
+	</body>
+</html>
+

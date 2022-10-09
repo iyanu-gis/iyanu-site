@@ -1,0 +1,58 @@
+body, html{
+    margin: 0px;
+}
+
+.button {
+    text-align: center;
+    margin: 0 auto;
+}
+
+button{
+    margin-top: 20px;
+    background-color: #aad3df;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.header{
+	background-color:#62b7d0;
+	color: white;
+	display: grid;
+ 	grid-template-columns: 200px auto;
+    align-items: center;
+}
+
+.header h1{
+   border-left: solid 2px white;
+   text-align: center; 
+}
+
+.header a {
+	margin: 0px;
+    text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+
+
+.header a:hover {
+	color: white;
+}
+
+.body-text{
+    line-height: 1.6;
+    padding: 10px;
+
+}
+
+#map{
+    margin: 0 auto 0 auto;
+}
+
+.ref{
+    padding: 6px 8px 6px 16px;
+    
+}

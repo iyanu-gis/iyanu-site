@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script> 
+		<script type="text/javascript" src="./js/jscoord-1.1.1.js"></script> <!--link to JSCoord library-->
+		<script type="text/javascript" src="./js/blueplaques_data_processed.js"></script> <!--link to JS file containing plaques data-->
+		<!-- clusterer javascript file provided by https://raw.githubusercontent.com/google/closure-compiler/master/contrib/externs/maps/google_maps_api_v3.js-->
+		<script type="text/javascript" src="./js/markerclusterer.js"></script>
+		<script type="text/javascript" src="./js/map_setup_plaques.js"></script> <!--link to JS file for the setup-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--for sidebar icons-->
+		<link rel="stylesheet" media="all" href="./css/map_style.css" type="text/css"> <!--link to CSS file-->
+
+		<title> Leeds Blue Plaques </title>
+	</head>
+	</body>  
+	<body onload="initialize()">
+		<div id="sidebar" class="sidebar">
+			<img src="./images/civictrust.png" alt="Leeds Civic Trust Logo">
+			<a class="list-group-item" href="./Index_page/index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+  			<a class="list-group-item" href="./html/slideshow.html"><i class="fa fa-picture-o fa-fw" aria-hidden="true"></i>&nbsp; Gallery</a>
+  			<a class="list-group-item" href="mailto:gy21ido@leeds.ac.uk"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; Contact</a>
+  			
+			<h3 id="sidebar-info"; style=" text-align:justify">  Up until 2016, about 160 blue plaques have been on many of Leeds' historical buildings to celebrate and remember notable people and events.</h3>
+
+			<h3 id="sidebar-info"; style=" text-align:justify"> This webpage shows 107 markers representing blue plaques installed across Leeds, West Yorkshire, England. Each marker shows the plaque's location, unveiler, date unveiled, and sponsor with attached images. </h3>
+
+			<p id="sidebar-info"; style= "text-align: justify"> <em><strong>Select a preferred blue plaque from the drop down menu below to navigate to its location.</strong></em></p>
+
+			<div class="dropdown" id="selectPlaque"></div>
+			<div id = "selection">
+				<select id='select' onChange='searchPlaque();'>
+				<option value = "">Select a Plaque</option>
+				</select>
+			</div>
+		</div> 
+		<div class="section">
+			<h1 id="page-id" style="background-color: rgb(0, 140, 255); text-align:center">Blue plaques in Leeds</h1>
+			<div class="gmap" id="map_canvas" style="height: 100%; width: 100%;"></div>
+		</div>
+	</body>
+</html> 
+
+
